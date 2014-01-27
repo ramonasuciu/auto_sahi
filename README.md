@@ -1,2 +1,2 @@
-auto_sahi
-=========
+behat_tests
+===========

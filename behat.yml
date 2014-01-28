@@ -12,8 +12,7 @@ default:
     bootstrap: bootstrap
   context:
     parameters:
-      base_url: http://qa.healthcentral.choicemedia.com/
-      browser: firefox
+      browser_name: firefox
   formatter:
     name: pretty, junit
     parameters:

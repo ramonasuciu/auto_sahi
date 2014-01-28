@@ -6,6 +6,7 @@ default:
       sahi: ~
       default_session: sahi
       javascript_session: sahi
+      base_url: http://qa.healthcentral.choicemedia.com/
   paths:
     features: .
     bootstrap: bootstrap

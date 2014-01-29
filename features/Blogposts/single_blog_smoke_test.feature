@@ -61,4 +61,4 @@ Feature: Blogpost "Byetta Fails"
     Scenario: Add a comment
         Given I am on "/diabetes/c/17/2631/comments"
         When I click on the text "Add a comment"
-        Then the url should match "/comment"
+        Then I should see "Add a Comment"

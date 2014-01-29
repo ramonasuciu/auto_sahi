@@ -58,7 +58,7 @@ Feature: Blogpost "Byetta Fails"
         When I click on the text "View comments"
         Then I should see "Add a comment"
 
-    Scenario: Add a comment
-        Given I am on "/diabetes/c/17/2631/comments"
-        When I click on the text "Add a comment"
-        Then I should see "Add a Comment"
+#    Scenario: Add a comment
+#        Given I am on "/diabetes/c/17/2631/comments"
+#        When I click on the text "Add a comment"
+#        Then I should see "Add a Comment"

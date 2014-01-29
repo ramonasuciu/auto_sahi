@@ -1,4 +1,3 @@
-@mink:sahi
 Feature: Blogpost "Byetta Fails"
     As a website user
     I want to be able to navigate to the "Byetta Fails" blogpost
@@ -29,8 +28,8 @@ Feature: Blogpost "Byetta Fails"
         And I should see <text_on_page>
 
         Examples:
-            |phases              |page_displayed                          |text_on_page                           |
-            |"Related Conditions"|"/diabetes/c/general/related-conditions"|"Diabetes often leads to"              |
+            |phases              |page_displayed                          |text_on_page             |
+            |"Related Conditions"|"/diabetes/c/general/related-conditions"|"Diabetes often leads to"|
 
     Scenario Outline: Also See links are functional and open the correct page
         Given I am on "/diabetes/c/17/2631/byetta-fails"
@@ -57,8 +56,3 @@ Feature: Blogpost "Byetta Fails"
         Given I am on "/diabetes/c/17/2631/byetta-fails"
         When I click on the text "View comments"
         Then I should see "Add a comment"
-
-    Scenario: Add a comment
-        Given I am on "/diabetes/c/17/2631/comments"
-        When I click on the text "Add a comment"
-        Then the url should match "/comment"

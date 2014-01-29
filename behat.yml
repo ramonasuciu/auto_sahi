@@ -1,18 +1,16 @@
 # behat.yml
-default:
+QA:
   extensions:
     Behat\MinkExtension\Extension:
       goutte: ~
       sahi: ~
       default_session: sahi
       javascript_session: sahi
+      base_url: http://qa.healthcentral.choicemedia.com/
+      browser_name: firefox
   paths:
     features: .
-    bootstrap: bootstrap
-  context:
-    parameters:
-      base_url: http://qa.healthcentral.choicemedia.com/
-      browser: firefox
+    bootstrap: bootstrap 
   formatter:
     name: pretty, junit
     parameters:

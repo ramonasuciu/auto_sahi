@@ -55,4 +55,13 @@ Feature: Blogpost "Byetta Fails"
     Scenario: Verify the "View comments" button
         Given I am on "/diabetes/c/17/2631/byetta-fails"
         When I click on the text "View comments"
+<<<<<<< HEAD
         Then I should see "Add a comment"
+=======
+        Then I should see "Add a comment"
+
+#    Scenario: Add a comment
+#        Given I am on "/diabetes/c/17/2631/comments"
+#        When I click on the text "Add a comment"
+#        Then I should see "Add a Comment"
+>>>>>>> a1cfae6683688e794ff8fb57613f776c3608de0d

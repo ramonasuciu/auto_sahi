@@ -12,6 +12,6 @@ QA:
     features: .
     bootstrap: bootstrap 
   formatter:
-    name: pretty, junit
+    name: pretty, junit, html
     parameters:
-      output_path: null, junit_results
+      output_path: null, junit_results, rh_report.html

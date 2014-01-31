@@ -12,6 +12,24 @@ QA:
     features: .
     bootstrap: bootstrap 
   formatter:
-    name: pretty, junit, html
+    name: pretty, junit
     parameters:
-      output_path: null, junit_results, rh_report.html
+      output_path: null, junit_results
+
+
+QA1:
+  extensions:
+    Behat\MinkExtension\Extension:
+      goutte: ~
+      sahi: ~
+      default_session: sahi
+      javascript_session: sahi
+      base_url: http://qa.healthcentral.choicemedia.com/
+      browser_name: chrome
+  paths:
+    features: .
+    bootstrap: bootstrap 
+  formatter:
+    name: pretty, junit
+    parameters:
+      output_path: null, junit_results
